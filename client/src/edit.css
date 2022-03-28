@@ -1,0 +1,7 @@
+.modal-radio{
+    display: flex!important;
+    gap: 6px;
+    margin: 6px;
+    align-items: baseline;
+    justify-content: space-around;
+}

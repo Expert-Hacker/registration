@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --btn:rgb(164, 142, 243);
+}
+
+.registration{
+    padding: 0px 100px;
+ 
+}
+.caption-1{
+    font-weight: 700 !important;
+    font-size: 22px;
+}
+span{
+    font-weight: 600;
+}
+.inputs-container{
+    background-color: rgb(253, 253, 245);
+
+    /* border: 1px solid black; */
+    position: relative;
+    padding: 30px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: stretch;
+    /* overflow: hidden; */
+}
+
+.child-flex{
+    display: flex;
+    justify-content:space-around;
+}
+.child-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 6px;
+}
+
+.radios-tit-conatiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.radio{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.btnn{
+   color: rgb(0, 0, 0);
+   border-radius: 30px;
+    position: relative;
+    background-color: rgb(224, 224, 224);
+    z-index: 1;
+    padding: 5px 30px;
+ /* transition: all 0.5s ease; */
+   
+}
+
+.btnn::before{
+    border-radius: 30px;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: rgb(245, 201, 81);
+    transition: all 0.5s ease;
+    visibility: hidden;
+   
+    border-radius: 5px;
+    z-index: -1;
+    transition: all 0.5s ease;
+
+  
+}
+.btnn:hover::before{
+    border-radius: 30px;
+    width: 100%;
+    visibility: visible;
+
+}
+
+.test-div{
+    position: relative;
+    height: 30vh;
+    width: 40vw;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.test-div::before{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 0%;
+    background: blue;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+.test-div:hover::before{
+    width: 100%;
+    visibility: visible;
+}
+
+@media only screen and (max-width:933px)
+{
+    .registration{
+        padding: 0px 50px !important;
+    }
+}
+@media only screen and (max-width:710px)
+{
+    .registration{
+        padding: 0px 10px !important;
+    }
+    .inputs-container{
+        padding: 15px 5px;
+        grid-template-columns: 1fr;
+    }
+    .radios-tit-conatiner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

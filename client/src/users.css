@@ -1,0 +1,11 @@
+.editDelete{
+    display: inline-block;
+    padding: 0px 4px;
+}
+.editDelete:hover{
+    cursor: pointer;
+    color: red;
+}
+.users-container{
+    overflow-y: hidden;
+}
